@@ -4,7 +4,7 @@ LABEL maintainer="@k33g"
 
 # Set environment variables for Go version and user
 ARG GO_ARCH=amd64
-ARG GO_VERSION=1.21.3
+ARG GO_VERSION=1.22.0
 
 ARG NODE_DISTRO=linux-x64
 ARG NODE_VERSION=v21.1.0
