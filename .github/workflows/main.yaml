@@ -14,7 +14,6 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
-          registry: hub-stage.docker.com
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Set up Docker Buildx
@@ -22,7 +21,7 @@ jobs:
         with:
           version: "lab:latest"
           driver: cloud
-          endpoint: "weyland/k33g-builder"
+          endpoint: "k33g/k33gbuilder"
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
