@@ -137,6 +137,6 @@ RUN touch ~/.sudo_as_admin_successful
 #bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 #EOF
 
-#RUN echo "👋 hello world 🌍"
+RUN echo "👋 hello world 🌍"
 
 CMD ["/bin/bash"]
